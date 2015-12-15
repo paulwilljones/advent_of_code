@@ -7,7 +7,7 @@ class Day2Solution(object):
             surface_area_1 = length * width
             surface_area_2 = width * height
             surface_area_3 = height * length
-        except ValueError:
+        except ValueError, TypeError:
             print "Values are not integers"
             raise
 
