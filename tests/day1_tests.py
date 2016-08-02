@@ -1,5 +1,8 @@
+#!/usr/bin/python
+
 import unittest
-from day1.day1_solution import Day1Solution
+
+from advent_of_code.day1.Day1Solution import Day1Solution
 
 
 class Day1SolutionTests(unittest.TestCase):
@@ -40,7 +43,9 @@ class Day1SolutionTests(unittest.TestCase):
         self._test_basement(self.basement_test_data_pass)
 
     def test_basement_negative(self):
-        raise(self._test_basement(self.basement_test_data_fail), AssertionError)
+        with self.assertRaises(AssertionError):
+            self._test_basement(self.basement_test_data_fail)
+
 
 if __name__ == '__main__':
     unittest.main()
