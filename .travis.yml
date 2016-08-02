@@ -1,1 +1,3 @@
-script: nosetests
+language: python
+
+script: make test

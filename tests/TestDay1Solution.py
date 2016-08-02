@@ -5,7 +5,7 @@ import unittest
 from advent_of_code.day1.Day1Solution import Day1Solution
 
 
-class Day1SolutionTests(unittest.TestCase):
+class TestDay1Solution(unittest.TestCase):
 
     def setUp(self):
         self.day1_solution = None

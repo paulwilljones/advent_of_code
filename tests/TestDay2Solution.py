@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import unittest
 
 from advent_of_code.day2.Day2Solution import Day2Solution
