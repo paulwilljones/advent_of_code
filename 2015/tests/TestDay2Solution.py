@@ -1,5 +1,4 @@
 #!/usr/bin/python
-
 import unittest
 
 from advent_of_code.day2.Day2Solution import Day2Solution
@@ -21,6 +20,7 @@ class TestDay2Solution(unittest.TestCase):
             self.day2solution.calculate_area(2, 1, "b")
         except TypeError:
             pass
+
 
 if __name__ == "__main__":
     unittest.main()

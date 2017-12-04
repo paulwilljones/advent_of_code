@@ -13,4 +13,4 @@ class Day2Solution(object):
 
         return (2 * surface_area_1) + (2 * surface_area_2) + \
                (2 * surface_area_3) + \
-               min(surface_area_1, surface_area_2, surface_area_3)
+            min(surface_area_1, surface_area_2, surface_area_3)

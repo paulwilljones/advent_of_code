@@ -10,5 +10,6 @@ def main():
 
     print(end_point)
 
+
 if __name__ == "__main__":
     main()

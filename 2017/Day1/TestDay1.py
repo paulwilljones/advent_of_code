@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
+import unittest
 
 from Day1 import Day1
-import unittest
 
 
 class TestDay1(unittest.TestCase):
@@ -64,6 +64,7 @@ class TestDay1(unittest.TestCase):
         sum = self.day1.sum_duplicates(duplicates)
 
         self.assertEqual(6, sum)
+
 
 if __name__ == "__main__":
     unittest.main()

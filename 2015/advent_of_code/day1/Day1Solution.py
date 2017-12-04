@@ -10,7 +10,8 @@ class Day1Solution(object):
         char_counters = {}
         for char_to_count in chars_to_count:
             char_counter = collections.Counter(self.to_parse)
-            char_counters.update({char_to_count: char_counter.get(char_to_count, 0)})
+            char_counters.update(
+                {char_to_count: char_counter.get(char_to_count, 0)})
 
         return char_counters
 

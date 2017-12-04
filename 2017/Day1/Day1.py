@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 import functools
 from itertools import cycle
 
@@ -45,11 +44,11 @@ class Day1(object):
         duplicates = []
         for i in range(len(sequence)):
             try:
-                if sequence[i-1] == sequence[i]:
-                    duplicates.append(int(sequence[i-1]))
+                if sequence[i - 1] == sequence[i]:
+                    duplicates.append(int(sequence[i - 1]))
             except IndexError:
-                if sequence[i-1] == sequence[1:]:
-                    duplicates.append(int(sequence[i-1]))
+                if sequence[i - 1] == sequence[1:]:
+                    duplicates.append(int(sequence[i - 1]))
 
         return duplicates
 
@@ -62,7 +61,7 @@ def main():
     day1 = Day1()
     captcha = list(day1.INPUT + day1.INPUT[0])
     #duplicates = day1.duplicates(captcha)
-    #print(day1.sum_duplicates(duplicates))
+    # print(day1.sum_duplicates(duplicates))
     duplicates = day1.with_trampoline(day1.recursive_duplicates)
     found_duplicates = duplicates([], captcha)
     print(day1.sum_duplicates(found_duplicates))

@@ -29,7 +29,8 @@ class Day1Solution(object):
         try:
             self.movements[self.current_direction] += int(distance_to_travel)
         except IndexError:
-            self.movements[self.current_direction - 2] -= int(distance_to_travel)
+            self.movements[self.current_direction -
+                           2] -= int(distance_to_travel)
 
     def determine_distance(self):
         return sum([abs(n) for n in self.movements])
